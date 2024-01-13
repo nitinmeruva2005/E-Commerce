@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG STYLE.INC</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header, nav, section, footer {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product:hover {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YOUNG STYLE.INC</h1>
+        <p>Fashion for the Young Generation</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Shop</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="product">
+            <img src="gq-beckham-airport-style-before.jpg.jpg" alt="T-Shirt">
+            <h3>Stylish T-Shirt</h3>
+            <p>₹499.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="photo-1617114919297-3c8ddb01f599.jpg" alt="Jeans">
+            <h3>Denim Jeans</h3>
+            <p>₹2299.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images.jpg" alt="Sneakers">
+            <h3>Outdoor Shoes</h3>
+            <p>₹2699.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 YOUNG STYLE.INC. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fade-in animation for header, navigation, section, and footer
+            document.querySelector('header').style.opacity = '1';
+            document.querySelector('header').style.transform = 'translateY(0)';
+            document.querySelector('nav').style.opacity = '1';
+            document.querySelector('nav').style.transform = 'translateY(0)';
+            document.querySelector('section').style.opacity = '1';
+            document.querySelector('section').style.transform = 'translateY(0)';
+            document.querySelector('footer').style.opacity = '1';
+            document.querySelector('footer').style.transform = 'translateY(0)';
+        });
+    </script>
+</body>
+</html>
